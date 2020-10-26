@@ -67,6 +67,8 @@ class Application(tk.Frame):
     def restartButton(self):
         numberRange[0] = 1
         numberRange[1] = 100
+        global number
+        number = randint(1, 100)
         for i in range(1, 101):
             self.buttons[i].configure(bg="#eae2db", fg="black", state=tk.NORMAL)
         self.button.configure(bg="grey", state=tk.DISABLED)
